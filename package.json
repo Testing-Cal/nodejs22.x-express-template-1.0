@@ -1,0 +1,53 @@
+{
+  "name": "node-template-1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config=jest.config.js",
+    "test:cov": "jest --config=jest.config.js --coverage",
+    "start": "PORT=4000 node ./src/app.js",
+    "build": "npm run-script build",
+    "sonar": "sonar-scanner"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "sonarqube-scanner": "^4.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "nodemon": "^3.1.4",
+    "jest": "^29.7.0",
+    "sonarqube-scanner": "^4.0.1",
+    "ts-jest": "^29.2.3"
+  },
+   "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
+  "jestSonar": {
+    "reportPath": ".",
+    "reportFile": "sonar-report.xml",
+    "indent": 4
+  }
+}
