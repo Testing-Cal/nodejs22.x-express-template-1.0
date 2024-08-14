@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyparser.urlencoded({extended:false}));
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Node.js with Express' });
+  res.render('index', { title: 'Node.js 22 with Express' });
 });
 
 app.use(process.env.context || "/", router);
