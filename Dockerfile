@@ -17,6 +17,7 @@ RUN npm install
 
 # add app
 COPY src ./src
+COPY views ./views
 
 # start app
 CMD ["node", "./src/app.js"]
