@@ -19,14 +19,16 @@
     "express": "^4.19.2",
     "jest": "^29.7.0",
     "supertest": "^7.0.0",
-    "sonarqube-scanner": "^4.0.1"
+    "sonarqube-scanner": "^4.0.1",
+    "jest-sonar-reporter": "^2.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.8",
     "nodemon": "^3.1.4",
     "jest": "^29.7.0",
     "sonarqube-scanner": "^4.0.1",
-    "ts-jest": "^29.2.3"
+    "ts-jest": "^29.2.3",
+    "jest-sonar-reporter": "^2.0.0"
   },
    "jest": {
     "moduleFileExtensions": [
